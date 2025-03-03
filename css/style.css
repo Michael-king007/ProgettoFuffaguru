@@ -1,1 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/*Variabili*/
+:root {
+    --bg-color: #1F1F1F;
+    --br-color-transparent: rgba(31, 31, 31, 0.8); /* Utilizza rgba per la trasparenza */
+    --white: #fff;
+    --primary-color: #5BFF74;
+    --font: Lexend, sans-serif;
+    --font-small: 14px;
+    --font-medium: 18px;
+    --font-large: 24px;
+}
+
+/*Span*/
+.green {
+    color: var(--primary-color);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/*General*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: #191919;
+    color: var(--white);
+}
+
+h1 {
+    font-size: var(--font-large);
+    font-weight: normal;
+}
+
+p {
+    font-size: var(--font-small);
+}
+
+nav {
+    font-size: var(--font-small);
+    gap: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+
+nav .logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+li:hover {
+    color: var(--primary-color);
+}
+
+button {
+    font-size: var(--font-small);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    font-family: var(--font);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4DFF5B;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 95%;
+    background-color: var(--br-color-transparent);
+    z-index: 0;
+}
+
+#headerVideo {
+    opacity: 0.4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.header-content {
+    gap: 100px;
+    display: flex;
+    margin: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.right .container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.container img {
+    width: 30px;
+}
