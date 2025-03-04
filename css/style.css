@@ -289,6 +289,7 @@ footer .social img {
     }
 
     footer {
+        gap: 20px;
         flex-direction: column;
         text-align: center;
         padding: 50px;
