@@ -205,6 +205,46 @@ section li {
 
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--bg-color);
+}
+
+.background {
+    background-image: url('/img/footer-tile.png');
+    background-size: 200px;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social img {
+    padding: 5px;
+    background-color: white;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -246,5 +286,11 @@ section li {
     
     #explaining .right, #who .right {
         width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
     }
 }
