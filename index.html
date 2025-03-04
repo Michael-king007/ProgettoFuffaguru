@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <script src="script/countdown.js" defer></script>
+  <script src="script/scroll.js" defer></script>
   <title>Document</title>
 </head>
 
@@ -13,15 +14,15 @@
   <nav>
     <img class="logo" src="img/logo.svg" alt="logo" onclick="window.location.href='homepage.html'">
     <ul>
-      <li><a>Home</a></li>
-      <li><a>Il Nostro Corso</a></li>
-      <li><a>Chi Siamo</a></li>
-      <li><a>Testimonianze</a></li>
+      <li><a onclick="redirectToSection('header')">Home</a></li>
+      <li><a onclick="redirectToSection('video')">Il Nostro Corso</a></li>
+      <li><a onclick="redirectToSection('who')">Chi Siamo</a></li>
+      <li><a onclick="redirectToSection('testimonianze')">Testimonianze</a></li>
     </ul>
     <button>Unisciti al corso!</button>
   </nav>
 
-  <header>
+  <header id="header">
     <video autoplay muted id="headerVideo">
       <source src="video/header_background.mp4" type="video/mp4">
     </video>
