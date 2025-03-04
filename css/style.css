@@ -131,7 +131,13 @@ header {
     justify-content: center;
     width: 100%;
 }
-
+.left1, .right1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200%;
+}
 .right .container {
     display: flex;
     flex-direction: row;
@@ -141,3 +147,14 @@ header {
 .container img {
     width: 30px;
 }
+.Lorenzo_Vitalis
+{
+    width: 450px;
+    height: 500px;
+}
+.left2, .right2
+{
+    justify-content: center;
+    width : 90%;
+}
+    
