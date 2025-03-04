@@ -110,6 +110,12 @@ button:hover {
     background-color: #4DFF5B;
 }
 
+.background {
+    background-image: url('/img/footer-tile.png');
+    background-size: 200px;
+    background-blend-mode: overlay;
+}
+
 header {
     padding-top: 80px;
 }
@@ -182,11 +188,11 @@ section li {
     font-size: var(--font-medium)
 }
 
-#explaining .left, #who .left {
+#explaining .left, #who .left, #testimonianze .right{
     width: 70vw;
 } 
 
-#explaining .right, #who .right {
+#explaining .right, #who .right, #testimonianze .left{
     width: 30vw;
 }
 
@@ -195,7 +201,22 @@ section li {
     height: 100%;
     width: 100%;
     border-radius: 15px;
+}
 
+#testimonianze .trustpilot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#testimonianze .trustpilot img{
+    width: 120px;
+}
+
+#testimonianze .right{
+    background-color: var(--page-color);
+    border-radius: 15px;
 }
 
 footer {
@@ -204,12 +225,6 @@ footer {
     align-items: center;
     padding: 40px;
     background-color: #1C2F1F;
-}
-
-.background {
-    background-image: url('/img/footer-tile.png');
-    background-size: 200px;
-    background-blend-mode: overlay;
 }
 
 footer .social {
@@ -278,11 +293,11 @@ footer .social img {
         margin: 50px;
     }
 
-    #explaining .left, #who .left {
+    #explaining .left, #who .left, #testimonianze .right {
         width: 100%;
     } 
     
-    #explaining .right, #who .right {
+    #explaining .right, #who .right, #testimonianze .left {
         width: 100%;
     }
 
