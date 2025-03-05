@@ -13,7 +13,7 @@
 <body>
     <nav>
         <div class="container">
-            <img class="logo" src="img/logo.svg" alt="logo" onclick="window.location.href='homepage.html'">
+            <img class="logo" src="img/logo.svg" alt="logo" onclick="window.location.href='index.html'">
             <ul>
                 <li><a onclick="redirectToSection('header')">Home</a></li>
                 <li><a onclick="redirectToSection('explaining')">Il Nostro Corso</a></li>
@@ -93,9 +93,8 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <button type="button"
-                        onclick="alert('I tuoi dati sono stati inviati con successo!')">Registrati</button>
-                    <button type="button" onclick="location.reload()">Reset</button>
+                    <button type="button" onclick="alert('I tuoi dati sono stati inviati con successo!')">Registrati</button>
+                    <button type="button" onclick="location.reload()" id="reset">Reset</button>
                 </div>
             </div>
         </section>
