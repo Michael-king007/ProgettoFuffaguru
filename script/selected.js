@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const inputs = document.querySelectorAll('.data .input');
+    const inputs = document.querySelectorAll('.data, .input');
 
     if (inputs.length > 0) {
         inputs.forEach(input => {
