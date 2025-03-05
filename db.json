@@ -1,62 +1,49 @@
-[
-  {
-    "id": 1,
-    "nome": "Mario Rossi",
-    "recensione": "Inizialmente scettico, ho deciso di provare CryptoZen per curiosità. Dopo poche settimane, ho notato un miglioramento nella gestione dei miei investimenti: l'interfaccia semplice mi ha permesso di controllare ogni operazione.",
-    "valutazione": "★★★★"
-  },
-  {
-    "id": 2,
-    "nome": "Luca Bianchi",
-    "recensione": "Durante un periodo di grande incertezza economica, ho sperimentato CryptoZen per testare nuove strategie di trading. L'esperienza mi ha insegnato a gestire il rischio in maniera innovativa e dinamica.",
-    "valutazione": "★★★★"
-  },
-  {
-    "id": 3,
-    "nome": "Giulia Verdi",
-    "recensione": "CryptoZen mi ha coinvolto fin dal primo utilizzo grazie a strumenti intuitivi che hanno reso il trading meno intimidatorio. In poco tempo, ho potuto osservare i risultati dei miei investimenti e imparare dal mercato.",
-    "valutazione": "★★★★★"
-  },
-  {
-    "id": 4,
-    "nome": "Alberto Del Prato",
-    "recensione": "Utilizzando CryptoZen, mi sono immerso in un ambiente di trading moderno e informativo. Ogni funzionalità mi ha aiutato a comprendere meglio le dinamiche del mercato delle criptovalute.",
-    "valutazione": "★★★★"
-  },
-  {
-    "id": 5,
-    "nome": "Roberto Piccoli",
-    "recensione": "Ho scelto CryptoZen in un momento in cui cercavo una piattaforma affidabile. L'esperienza si è rivelata un percorso di scoperta, dove ogni operazione mi ha fatto capire le potenzialità del trading digitale.",
-    "valutazione": "★★★★★"
-  },
-  {
-    "id": 6,
-    "nome": "Chiara Ferrari",
-    "recensione": "La mia esperienza con CryptoZen è stata sorprendente: dalla registrazione, la piattaforma mi ha guidato attraverso operazioni sicure e trasparenti, rendendo il mondo delle criptovalute davvero accessibile.",
-    "valutazione": "★★★★"
-  },
-  {
-    "id": 7,
-    "nome": "Sebastiano Esposito",
-    "recensione": "Da alcuni mesi utilizzo CryptoZen e ho imparato a investire con una nuova mentalità. L'interfaccia intuitiva e le funzioni avanzate hanno trasformato il mio modo di approcciare il trading.",
-    "valutazione": "★★★★★"
-  },
-  {
-    "id": 8,
-    "nome": "Fabrizio Romano",
-    "recensione": "CryptoZen è diventata una risorsa preziosa per me. Durante il suo utilizzo, ho appreso strategie efficaci e affrontato le sfide del mercato con maggiore consapevolezza.",
-    "valutazione": "★★★★★"
-  },
-  {
-    "id": 9,
-    "nome": "Laura Conti",
-    "recensione": "Utilizzando CryptoZen, ho sperimentato un modo diverso di interagire con le criptovalute. La piattaforma offre strumenti pratici per monitorare i miei progressi, rendendo ogni transazione significativa.",
-    "valutazione": "★★★★"
-  },
-  {
-    "id": 10,
-    "nome": "Alessio Moretti",
-    "recensione": "La mia esperienza con CryptoZen ha superato le aspettative: ho esplorato un universo di opportunità grazie a una piattaforma che rende il trading sicuro e trasparente, un vero percorso di apprendimento continuo.",
-    "valutazione": "★★★★★"
-  }
-]
+{
+    "reviews": [
+        {
+            "id": 1,
+            "name": "Alessandro",
+            "age": 25,
+            "rating": 5,
+            "shortReview": "Esperienza fantastica!",
+            "fullReview": "CryptoZen ha completamente trasformato il mio approccio al trading. Il sistema automatizzato è incredibilmente efficiente e il team di supporto è sempre disponibile per aiutarti in ogni momento. Sono rimasto impressionato dalla facilità con cui riesco a fare trading e dall'accuratezza delle strategie suggerite. Lo consiglio vivamente a chiunque voglia iniziare nel mondo del trading o migliorare le proprie capacità.",
+            "profileImage": "img/pfp/1.png"
+        },
+        {
+            "id": 2,
+            "name": "Roberto",
+            "age": 30,
+            "rating": 4,
+            "shortReview": "Ottimo strumento per i principianti!",
+            "fullReview": "Ero scettico all'inizio, ma CryptoZen ha reso il trading facile per me. Le strategie guidate dall'AI mi hanno aiutato a fare investimenti intelligenti senza alcuna esperienza precedente. Il sistema è molto intuitivo e offre supporto quando ne hai bisogno. Tuttavia, credo che ci siano ancora margini di miglioramento nella personalizzazione dei consigli, ma per i principianti è sicuramente una risorsa preziosa.",
+            "profileImage": "img/pfp/2.png"
+        },
+        {
+            "id": 3,
+            "name": "Carlo",
+            "age": 28,
+            "rating": 5,
+            "shortReview": "Altamente efficace!",
+            "fullReview": "La piattaforma di CryptoZen è estremamente facile da usare e molto efficace. Ho visto ritorni significativi sui miei investimenti grazie alle strategie automatizzate. La cosa che mi ha colpito di più è stata l'attenzione al cliente; sono sempre pronti a rispondere a qualsiasi domanda o problema. Non avrei mai pensato che il trading potesse essere così semplice e vantaggioso. Consiglio questa piattaforma a chiunque voglia investire in criptovalute.",
+            "profileImage": "img/pfp/3.png"
+        },
+        {
+            "id": 4,
+            "name": "Diana",
+            "age": 35,
+            "rating": 3,
+            "shortReview": "Buono, ma con margini di miglioramento.",
+            "fullReview": "CryptoZen è una piattaforma buona, ma ci sono alcune aree che potrebbero essere migliorate. L'interfaccia utente potrebbe essere più intuitiva e sarebbe utile avere una navigazione più fluida. Inoltre, la risposta del supporto potrebbe essere più rapida. Nonostante ciò, il sistema automatizzato di trading è solido e ha dato buoni risultati nelle operazioni. Penso che se dovessero migliorare questi aspetti, sarebbe una piattaforma davvero eccellente.",
+            "profileImage": "img/pfp/4.png"
+        },
+        {
+            "id": 5,
+            "name": "Eva",
+            "age": 40,
+            "rating": 4,
+            "shortReview": "Prestazioni solide.",
+            "fullReview": "Uso CryptoZen da alcuni mesi ormai e sono molto impressionata dalle sue performance. Le strategie di trading automatizzato sono affidabili e ho visto guadagni costanti nel tempo. La piattaforma è facile da usare e, anche se non è perfetta, è molto funzionale. Penso che CryptoZen sia una delle migliori soluzioni per chi cerca un sistema di trading che funzioni in modo continuo e con buon rendimento. Ci sono alcuni piccoli miglioramenti da fare, ma nel complesso è molto solida.",
+            "profileImage": "img/pfp/5.png"
+        }
+    ]
+}
