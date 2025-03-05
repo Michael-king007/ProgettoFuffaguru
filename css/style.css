@@ -308,3 +308,12 @@ footer .social img {
         padding: 50px;
     }
 }
+table
+{
+    margin: auto;
+    margin-top: 90px;
+    width: 400px;
+    height: 300px;
+    font-size: var(--font-small);
+    border-radius: 10px;
+}
