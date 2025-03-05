@@ -2,234 +2,267 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="script/countdown.js" defer></script>
-  <script src="script/scroll.js" defer></script>
-  <title>CryptoZen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/countdown.js" defer></script>
+    <script src="script/scroll.js" defer></script>
+    <title>CryptoZen</title>
 </head>
 
 <body>
-  <nav>
-    <div class="container">
-      <img class="logo" src="img/logo.svg" alt="logo" onclick="window.location.href='homepage.html'">
-      <ul>
-        <li><a onclick="redirectToSection('header')">Home</a></li>
-        <li><a onclick="redirectToSection('explaining')">Il Nostro Corso</a></li>
-        <li><a onclick="redirectToSection('who')">Chi Siamo</a></li>
-        <li><a onclick="redirectToSection('testimonianze')">Testimonianze</a></li>
-      </ul>
-    </div>
-
-    <button><a href="form.html"> Unisciti al corso!</a> </button>
-  </nav>
-
-  <header id="header">
-    <video autoplay muted id="headerVideo">
-      <source src="video/header_background.mp4" type="video/mp4">
-    </video>
-
-    <div class="header-content">
-      <div class="left">
-        <h1>Guadagnare non è mai stato così <span class="green underline">semplice</span>: Scopri il metodo <span
-            class="green underline">CryptoZen!</span></h1>
-        <p><span class="green">Unisciti a centinaia di persone</span> che hanno trasformato le loro abilità in guadagni
-          reali. Attraverso strategie pratiche, strumenti efficaci e il <span class="green">supporto di esperti</span>,
-          CryptoZen ti guida passo dopo passo per monetizzare le tue competenze e costruire un <span
-            class="green">reddito sostenibile</span>. Non importa da dove parti: <span class="green">il successo è alla
-            tua portata!</span></p>
-
-        <p>Grazie a un sistema automatizzato basato sull’<span class="green">Intelligenza Artificiale</span>, anche chi
-          non ha esperienza può iniziare a generare entrate in modo semplice e sicuro. Il mercato delle criptovalute
-          offre opportunità senza precedenti, e con gli strumenti giusti puoi sfruttarle al massimo. <span
-            class="green">CryptoZen ti aiuta a minimizzare i rischi e a massimizzare i profitti</span>, così puoi
-          concentrarti su ciò che conta davvero: costruire il tuo futuro finanziario con serenità.</p>
-
-        <p class="underline centered">⏳ Posti limitati! <span class="green">Iscriviti ora prima che le iscrizioni si
-            chiudano!</span></p>
-        <div id="countdown"></div>
-      </div>
-      <div class="right">
+    <nav>
         <div class="container">
-          <img src="img/graph.svg" alt="graph" draggable="false">
-          <p>Scopri un <span class="green">metodo collaudato</span> che ti permette di aumentare i tuoi <span
-              class="green">guadagni</span> in modo costante e sicuro!</p>
+            <img class="logo" src="img/logo.svg" alt="logo" onclick="window.location.href='index.html'">
+            <ul>
+                <li><a onclick="redirectToSection('header')">Home</a></li>
+                <li><a onclick="redirectToSection('explaining')">Il Nostro Corso</a></li>
+                <li><a onclick="redirectToSection('who')">Chi Siamo</a></li>
+                <li><a onclick="redirectToSection('testimonianze')">Testimonianze</a></li>
+            </ul>
         </div>
-        <div class="container">
-          <img src="img/stopwatch.svg" alt="stopwatch" draggable="false">
-          <p>Impara con un <span class="green">percorso pratico</span>, chiaro e accessibile a tutti, per ottenere <span
-              class="green">risultati concreti</span> nel minor tempo possibile!</p>
-        </div>
-        <div class="container">
-          <img src="img/notification.svg" alt="notification" draggable="false">
-          <p>Non sarai mai solo: avrai sempre a disposizione un <span class="green">team di esperti</span> pronti a
-            supportarti in ogni fase del tuo <span class="green">percorso</span>!</p>
-        </div>
-        <div class="container">
-          <img src="img/valigia.svg" alt="valigia" draggable="false">
-          <p>Accedi a <span class="green">strategie aggiornate</span> e ottimizzate per garantirti il <span
-              class="green">massimo profitto</span> nel mercato attuale!</p>
-        </div>
-        
-      </div>
-    </div>
-  </header>
 
-  <section id="video" class="background">
-    <div class="section-content">
-      <div class="left">
-        <h1>Scopri il <span class="green underline">metodo di trading</span> pensato per <span
-            class="green underline">massimizzare i
-            profitti</span> nel 2025!</h1>
+        <button onclick="window.location.href='form.html'">Unisciti al corso!</button>
+    </nav>
 
-        <p>Il 2025 potrebbe essere <span class="green">l’anno della svolta</span>, ma devi agire ora. Il mondo delle
-          <span class="green">criptovalute</span> evolve rapidamente, offrendo nuove opportunità per costruire un <span
-            class="green">reddito stabile</span> e automatizzato. Con il nostro sistema, puoi sfruttare l’<span
-            class="green">Intelligenza Artificiale</span> per generare <span class="green">profitti automatici</span>
-          dalle <span class="green">crypto</span>, anche senza esperienza. Questo corso ti guiderà <span
-            class="green">passo dopo passo</span> per cogliere il massimo dal mercato in modo <span
-            class="green">semplice</span> e <span class="green">sicuro</span>.
-        </p>
-      </div>
-      <div class="right">
-        <video autoplay muted controls>
-          <source src="video/video.mp4" type="video/mp4">
+    <header id="header" class="margin">
+        <video autoplay muted id="headerVideo">
+            <source src="video/header_background.mp4" type="video/mp4">
         </video>
-      </div>
-    </div>
-  </section>
 
-  <section id="explaining" class="background">
-    <div class="section-content">
-      <div class="left">
-        <h1>Come puoi guadagnare fino a <span class="green">€5000 al mese</span> in modo <span
-            class="green">semplice</span> e <span class="green">automatizzato</span>.</h1>
+        <div class="header-content">
+            <div class="left">
+                <h1>Guadagnare non è mai stato così <span class="green underline">semplice</span>: Scopri il metodo
+                    <span class="green underline">CryptoZen!</span></h1>
+                <p><span class="green">Unisciti a centinaia di persone</span> che hanno trasformato le loro abilità in
+                    guadagni
+                    reali. Attraverso strategie pratiche, strumenti efficaci e il <span class="green">supporto di
+                        esperti</span>,
+                    CryptoZen ti guida passo dopo passo per monetizzare le tue competenze e costruire un <span
+                        class="green">reddito sostenibile</span>. Non importa da dove parti: <span class="green">il
+                        successo è alla
+                        tua portata!</span></p>
 
-        <p>Il sistema sfrutta l’<span class="green">Intelligenza Artificiale</span> per individuare le migliori
-          opportunità nel mercato delle <span class="green">criptovalute</span>, con particolare attenzione alle
-          strategie più efficaci per operare su <span class="green">CryptoZen</span> e automatizzare il processo di
-          trading. Ecco come potrebbe funzionare idealmente:</p>
+                <p>Grazie a un sistema automatizzato basato sull’<span class="green">Intelligenza Artificiale</span>,
+                    anche chi
+                    non ha esperienza può iniziare a generare entrate in modo semplice e sicuro. Il mercato delle
+                    criptovalute
+                    offre opportunità senza precedenti, e con gli strumenti giusti puoi sfruttarle al massimo. <span
+                        class="green">CryptoZen ti aiuta a minimizzare i rischi e a massimizzare i profitti</span>, così
+                    puoi
+                    concentrarti su ciò che conta davvero: costruire il tuo futuro finanziario con serenità.</p>
 
-        <ul>
-          <li><span class="green">Analisi avanzata del mercato</span> – L’AI monitora costantemente il mercato <span
-              class="green">crypto</span>, identificando pattern, trend e segnali di trading con il massimo potenziale,
-            includendo <span class="green">CryptoZen</span> tra le opportunità più promettenti.</li>
-
-          <li><span class="green">Selezione delle operazioni migliori</span> – Il sistema filtra le opportunità più
-            redditizie su <span class="green">CryptoZen</span> e altre <span class="green">criptovalute
-              strategiche</span>, eliminando il rumore di mercato e riducendo i rischi.</li>
-
-          <li><span class="green">Automazione del trading</span> – Il sistema può eseguire automaticamente gli scambi su
-            <span class="green">CryptoZen</span>, gestendo acquisti e vendite per ottimizzare i profitti senza necessità
-            di intervento manuale.
-          </li>
-
-          <li><span class="green">Gestione del rischio intelligente</span> – Vengono adottate strategie di <span
-              class="green">money management</span>, impostando <span class="green">stop-loss</span> e <span
-              class="green">take-profit</span> per proteggere il capitale e massimizzare i guadagni.</li>
-
-          <li><span class="green">Accesso per tutti</span> – Anche senza esperienza, è possibile iniziare con facilità
-            grazie a un’<span class="green">interfaccia intuitiva</span> e strategie scalabili, partendo anche con un
-            <span class="green">budget ridotto</span> su <span class="green">CryptoZen</span>.
-          </li>
-        </ul>
-
-        <p>Grazie a questa combinazione di <span class="green">tecnologia</span> e <span class="green">strategia</span>,
-          il sistema permette di monetizzare <span class="green">CryptoZen</span> in modo <span
-            class="green">semplice</span>, <span class="green">sicuro</span> e <span class="green">automatizzato</span>,
-          senza dover passare ore davanti ai grafici o avere competenze avanzate di trading. 🚀</p>
-      </div>
-
-      <div class="right centered">
-        <p>Unisciti anche tu alle più di <span class="green">700 persone</span> che hanno già raggiunto la <span
-            class="green">libertà finanziaria</span> e la <span class="green">tranquillità economica</span> grazie a
-          <span class="green">CryptoZen</span>.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="who" class="background">
-    <div class="section-content">
-      <div class="left">
-        <h1>Chi c’è dietro <span class="green">CryptoZen</span>: la visione e il team che rivoluzionano il trading</h1>
-
-        <p><span class="green">CryptoZen</span> è nata con una missione precisa: rendere il <span class="green">trading
-            di criptovalute</span> accessibile a tutti, senza barriere legate all’<span class="green">esperienza</span>
-          o al <span class="green">capitale iniziale</span>. Fondata e guidata da <span class="green">Lorenzo
-            Vitalis</span>, combina <span class="green">tecnologia avanzata</span> e <span class="green">strategie
-            collaudate</span> per offrire un <span class="green">sistema di investimento automatizzato</span>,
-          affidabile ed efficiente.</p>
-
-        <p>Grazie all’<span class="green">Intelligenza Artificiale</span>, abbiamo già aiutato oltre <span
-            class="green">700 persone</span> a semplificare il <span class="green">trading</span> e a ottenere <span
-            class="green">risultati concreti</span>, senza la necessità di <span class="green">conoscenze tecniche
-            avanzate</span>. Crediamo in un futuro in cui chiunque possa costruire la propria <span
-            class="green">indipendenza finanziaria</span>, e <span class="green">CryptoZen</span> è lo strumento per
-          trasformare questa possibilità in realtà.</p>
-
-        <p>“Ho creato <span class="green">CryptoZen</span> con un’idea precisa: dare a tutti la possibilità di entrare
-          nel mondo delle <span class="green">criptovalute</span> senza paura e senza complicazioni. Volevo un sistema
-          che funzionasse davvero, che permettesse di guadagnare anche a chi parte da zero. Oggi, vedere così tante
-          persone trasformare la loro <span class="green">situazione finanziaria</span> grazie a <span
-            class="green">CryptoZen</span> è la conferma che tutto questo è possibile.” – <span class="green">Lorenzo
-            Vitalis</span></p>
-      </div>
-      <div class="right">
-        <img src="img/Lorenzo_Vitalis.jpg" alt="team" draggable="false">
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonianze" class="background">
-    <div class="section-content">
-      <div class="left">
-        <h1>Le storie di chi ha già trasformato il proprio <span class="green">futuro</span> grazie a noi</h1>
-
-        <p>Scopri le storie di chi ha deciso di avvicinarsi al mondo del <span class="green">trading
-            automatizzato</span> e come questa scelta ha influenzato il loro <span class="green">percorso
-            finanziario</span> e <span class="green">personale</span>.</p>
-
-        <div class="trustpilot">
-          <img src="img/trustpilot_logo.svg" alt="trustpilot_logo" draggable="false">
-          <img src="img/trustpilot_stars.svg" alt="trustpilot_stars" draggable="false">
-        </div>
-      </div>
-      <div class="right">
-        <div class="top">
-          <img src="img/pfp/pfp1.jpg" alt="pfp1" draggable="false">
-          <div class="container">
-            <h1>Luca R., 34 Anni</h1>
-            <p>Per dopo, valutazioni</p>
-            <div class="valutazione"> 
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="half_star"></div>
+                <p class="underline centered">⏳ Posti limitati! <span class="green">Iscriviti ora prima che le
+                        iscrizioni si
+                        chiudano!</span></p>
+                <div id="countdown"></div>
             </div>
-          </div>
-        
+            <div class="right">
+                <div class="container">
+                    <img src="img/graph.svg" alt="graph" draggable="false">
+                    <p>Scopri un <span class="green">metodo collaudato</span> che ti permette di aumentare i tuoi <span
+                            class="green">guadagni</span> in modo costante e sicuro!</p>
+                </div>
+                <div class="container">
+                    <img src="img/stopwatch.svg" alt="stopwatch" draggable="false">
+                    <p>Impara con un <span class="green">percorso pratico</span>, chiaro e accessibile a tutti, per
+                        ottenere <span class="green">risultati concreti</span> nel minor tempo possibile!</p>
+                </div>
+                <div class="container">
+                    <img src="img/notification.svg" alt="notification" draggable="false">
+                    <p>Non sarai mai solo: avrai sempre a disposizione un <span class="green">team di esperti</span>
+                        pronti a
+                        supportarti in ogni fase del tuo <span class="green">percorso</span>!</p>
+                </div>
+                <div class="container">
+                    <img src="img/valigia.svg" alt="valigia" draggable="false">
+                    <p>Accedi a <span class="green">strategie aggiornate</span> e ottimizzate per garantirti il <span
+                            class="green">massimo profitto</span> nel mercato attuale!</p>
+                </div>
+                <button onclick="window.location.href='form.html'">Unisciti al corso!</button>
+            </div>
         </div>
+    </header>
+
+    <section id="video" class="background">
+        <div class="section-content">
+            <div class="left">
+                <h1>Scopri il <span class="green underline">metodo di trading</span> pensato per <span
+                        class="green underline">massimizzare i
+                        profitti</span> nel 2025!</h1>
+
+                <p>Il 2025 potrebbe essere <span class="green">l’anno della svolta</span>, ma devi agire ora. Il mondo
+                    delle
+                    <span class="green">criptovalute</span> evolve rapidamente, offrendo nuove opportunità per costruire
+                    un <span class="green">reddito stabile</span> e automatizzato. Con il nostro sistema, puoi sfruttare
+                    l’<span class="green">Intelligenza Artificiale</span> per generare <span class="green">profitti
+                        automatici</span>
+                    dalle <span class="green">crypto</span>, anche senza esperienza. Questo corso ti guiderà <span
+                        class="green">passo dopo passo</span> per cogliere il massimo dal mercato in modo <span
+                        class="green">semplice</span> e <span class="green">sicuro</span>.
+                </p>
+            </div>
+            <div class="right">
+                <video autoplay muted controls>
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
-      </div>
-  </section>
+    </section>
 
-  <footer class="background">
-    <img src="img/logo.svg" alt="logo" draggable="false">
+    <section id="explaining" class="background">
+        <div class="section-content">
+            <div class="left">
+                <h1>Come puoi guadagnare fino a <span class="green">€5000 al mese</span> in modo <span
+                        class="green">semplice</span> e <span class="green">automatizzato</span>.</h1>
 
-    <p>© 2025 E Profit. Tutti i diritti riservati.</p>
+                <p>Il sistema sfrutta l’<span class="green">Intelligenza Artificiale</span> per individuare le migliori
+                    opportunità nel mercato delle <span class="green">criptovalute</span>, con particolare attenzione
+                    alle
+                    strategie più efficaci per operare su <span class="green">CryptoZen</span> e automatizzare il
+                    processo di
+                    trading. Ecco come potrebbe funzionare idealmente:</p>
 
-    <div class="social">
-      <p>Seguici su:</p>
-      <div class="icons">
-        <img src="img/facebook.svg" alt="facebook" draggable="false">
-        <img src="img/instagram.svg" alt="instagram" draggable="false">
-        <img src="img/youtube.svg" alt="twitter" draggable="false">
-      </div>
-    </div>
-  </footer>
+                <ul>
+                    <li><span class="green">Analisi avanzata del mercato</span> – L’AI monitora costantemente il mercato
+                        <span class="green">crypto</span>, identificando pattern, trend e segnali di trading con il
+                        massimo potenziale,
+                        includendo <span class="green">CryptoZen</span> tra le opportunità più promettenti.</li>
+
+                    <li><span class="green">Selezione delle operazioni migliori</span> – Il sistema filtra le
+                        opportunità più
+                        redditizie su <span class="green">CryptoZen</span> e altre <span class="green">criptovalute
+                            strategiche</span>, eliminando il rumore di mercato e riducendo i rischi.</li>
+
+                    <li><span class="green">Automazione del trading</span> – Il sistema può eseguire automaticamente gli
+                        scambi su
+                        <span class="green">CryptoZen</span>, gestendo acquisti e vendite per ottimizzare i profitti
+                        senza necessità
+                        di intervento manuale.
+                    </li>
+
+                    <li><span class="green">Gestione del rischio intelligente</span> – Vengono adottate strategie di
+                        <span class="green">money management</span>, impostando <span class="green">stop-loss</span> e
+                        <span class="green">take-profit</span> per proteggere il capitale e massimizzare i guadagni.
+                    </li>
+
+                    <li><span class="green">Accesso per tutti</span> – Anche senza esperienza, è possibile iniziare con
+                        facilità
+                        grazie a un’<span class="green">interfaccia intuitiva</span> e strategie scalabili, partendo
+                        anche con un
+                        <span class="green">budget ridotto</span> su <span class="green">CryptoZen</span>.
+                    </li>
+                </ul>
+
+                <p>Grazie a questa combinazione di <span class="green">tecnologia</span> e <span
+                        class="green">strategia</span>,
+                    il sistema permette di monetizzare <span class="green">CryptoZen</span> in modo <span
+                        class="green">semplice</span>, <span class="green">sicuro</span> e <span
+                        class="green">automatizzato</span>,
+                    senza dover passare ore davanti ai grafici o avere competenze avanzate di trading. 🚀</p>
+            </div>
+
+            <div class="right centered">
+                <p>Unisciti anche tu alle più di <span class="green">700 persone</span> che hanno già raggiunto la <span
+                        class="green">libertà finanziaria</span> e la <span class="green">tranquillità economica</span>
+                    grazie a
+                    <span class="green">CryptoZen</span>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="who" class="background">
+        <div class="section-content">
+            <div class="left">
+                <h1>Chi c’è dietro <span class="green">CryptoZen</span>: la visione e il team che rivoluzionano il
+                    trading</h1>
+
+                <p><span class="green">CryptoZen</span> è nata con una missione precisa: rendere il <span
+                        class="green">trading
+                        di criptovalute</span> accessibile a tutti, senza barriere legate all’<span
+                        class="green">esperienza</span>
+                    o al <span class="green">capitale iniziale</span>. Fondata e guidata da <span class="green">Lorenzo
+                        Vitalis</span>, combina <span class="green">tecnologia avanzata</span> e <span
+                        class="green">strategie
+                        collaudate</span> per offrire un <span class="green">sistema di investimento
+                        automatizzato</span>,
+                    affidabile ed efficiente.</p>
+
+                <p>Grazie all’<span class="green">Intelligenza Artificiale</span>, abbiamo già aiutato oltre <span
+                        class="green">700 persone</span> a semplificare il <span class="green">trading</span> e a
+                    ottenere <span class="green">risultati concreti</span>, senza la necessità di <span
+                        class="green">conoscenze tecniche
+                        avanzate</span>. Crediamo in un futuro in cui chiunque possa costruire la propria <span
+                        class="green">indipendenza finanziaria</span>, e <span class="green">CryptoZen</span> è lo
+                    strumento per
+                    trasformare questa possibilità in realtà.</p>
+
+                <p>“Ho creato <span class="green">CryptoZen</span> con un’idea precisa: dare a tutti la possibilità di
+                    entrare
+                    nel mondo delle <span class="green">criptovalute</span> senza paura e senza complicazioni. Volevo un
+                    sistema
+                    che funzionasse davvero, che permettesse di guadagnare anche a chi parte da zero. Oggi, vedere così
+                    tante
+                    persone trasformare la loro <span class="green">situazione finanziaria</span> grazie a <span
+                        class="green">CryptoZen</span> è la conferma che tutto questo è possibile.” – <span
+                        class="green">Lorenzo
+                        Vitalis</span></p>
+            </div>
+            <div class="right">
+                <img src="img/Lorenzo_Vitalis.jpg" alt="team" draggable="false">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonianze" class="background">
+        <div class="section-content">
+            <div class="left">
+                <h1>Le storie di chi ha già trasformato il proprio <span class="green">futuro</span> grazie a noi</h1>
+
+                <p>Scopri le storie di chi ha deciso di avvicinarsi al mondo del <span class="green">trading
+                        automatizzato</span> e come questa scelta ha influenzato il loro <span class="green">percorso
+                        finanziario</span> e <span class="green">personale</span>.</p>
+
+                <div class="trustpilot">
+                    <img src="img/trustpilot_logo.svg" alt="trustpilot_logo" draggable="false">
+                    <img src="img/trustpilot_stars.svg" alt="trustpilot_stars" draggable="false">
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <img src="img/pfp/pfp1.jpg" alt="pfp1" draggable="false">
+                    <div class="container">
+                        <h1>Luca R., 34 Anni</h1>
+                        <p>Per dopo, valutazioni</p>
+                        <div class="valutazione">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="half_star"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="background">
+        <img src="img/logo.svg" alt="logo" draggable="false">
+
+        <p>© 2025 E Profit. Tutti i diritti riservati.</p>
+
+        <div class="social">
+            <p>Seguici su:</p>
+            <div class="icons">
+                <img src="img/facebook.svg" alt="facebook" draggable="false">
+                <img src="img/instagram.svg" alt="instagram" draggable="false">
+                <img src="img/youtube.svg" alt="twitter" draggable="false">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

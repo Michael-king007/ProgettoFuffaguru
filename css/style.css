@@ -25,6 +25,10 @@
     text-align: center;
 }
 
+.margin {
+    margin-top: 80px;
+}
+
 /*General*/
 body {
     display: flex;
@@ -57,7 +61,7 @@ nav {
     background-color: var(--page-color);
     z-index: 10;
     width: 100%;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);   
 }
 
 nav .container {
@@ -100,7 +104,7 @@ button {
     border: none;
     border-radius: 5px;
     background-color: var(--primary-color);
-    color: var(--bg-color);
+    color: var(--page-color);
     font-family: var(--font);
     cursor: pointer;
     transition: background-color 0.3s;
@@ -110,14 +114,15 @@ button:hover {
     background-color: #4DFF5B;
 }
 
+button a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
 .background {
     background-image: url('/img/footer-tile.png');
     background-size: 200px;
     background-blend-mode: overlay;
-}
-
-header {
-    padding-top: 80px;
 }
 
 #headerVideo {
@@ -219,6 +224,58 @@ section li {
     border-radius: 15px;
 }
 
+/*Registration*/
+#register .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.personal-info, .credentials, .payment {
+    width: 100%;
+}
+
+.section-content .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.input {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input input, .input select {
+    padding: 10px;
+    border-radius: 5px;
+    border: var(--white) solid 2px;
+    background-color: var(--bg-color);
+    color: var(--white);
+    box-sizing: border-box; /* Assicura che il padding sia incluso nella larghezza */
+}
+
+.input select {
+    padding-right: 10px; /* Assicura che il padding sia coerente con gli input */
+}
+
+.section-content .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+#reset{
+    background-color: #FF5B5B;
+}
+
+#reset:hover{
+    background-color: #FF4D4D;
+}
+
+/*Footer*/
 footer {
     display: flex;
     justify-content: space-between;
@@ -252,6 +309,7 @@ footer .social img {
     cursor: pointer;
 }
 
+/*Responsive*/
 @media screen and (max-width: 768px) {
     nav .container {
         flex-direction: column;
@@ -301,19 +359,19 @@ footer .social img {
         width: 100%;
     }
 
+    .section-content .info {
+        width: 100%;
+        gap: 50px;
+    }
+
+    .personal-info, .credentials, .payment {
+        width: 100%;
+    }
+
     footer {
         gap: 20px;
         flex-direction: column;
         text-align: center;
         padding: 50px;
     }
-}
-table
-{
-    margin: auto;
-    margin-top: 90px;
-    width: 400px;
-    height: 300px;
-    font-size: var(--font-small);
-    border-radius: 10px;
 }

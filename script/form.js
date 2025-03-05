@@ -1,11 +1,27 @@
-function REGISTRATO()
-{
-    alert("Benvenuto su CryptoZen!");
+// Funzione per controllare il form
+function checkForm() {
+    const form = document.querySelector('#register .section-content');
+    const inputs = form.querySelectorAll('input, select');
+    let valid = true;
+
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+            valid = false;
+            input.classList.add('invalid');
+        } else {
+            input.classList.remove('invalid');
+        }
+    });
+
+    if (valid) {
+        
+        // Puoi aggiungere qui il codice per inviare il form
+    } else {
+        alert('Per favore, compila tutti i campi richiesti.');
+    }
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("ResetButton").addEventListener('click', function(){
-        let inputs = document.querySelectorAll("table input");
-        inputs.forEach(input => input.value = "");
-    });
-})
+// Funzione per resettare il form
+function resetForm() {
+    ;
+}
