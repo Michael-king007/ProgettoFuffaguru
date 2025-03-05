@@ -25,78 +25,90 @@
         <button onclick="window.location.href='form.html'">Unisciti al corso!</button>
     </nav>
 
-    <section id="register" class="margin background">
-        <div class="section-content">
-            <div class="info">
-                <div class="personal-info">
-                    <h1>Informazioni Personali</h1>
-                    <div class="input">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Inserisci il nome" required>
+    <header id="header-form" class="margin">
+        <section id="register" class = "background">
+            <div class="section-content">
+                <div class="info">
+                    <div class="personal-info">
+                        <h1>Informazioni Personali</h1>
+                        <div class="input">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Inserisci il nome" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="cognome">Cognome</label>
+                            <input type="text" id="cognome" name="cognome" placeholder="Inserisci il cognome" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="sesso">Sesso</label>
+                            <select id="sesso" name="sesso" required>
+                                <option value="M">Maschio</option>
+                                <option value="F">Femmina</option>
+                                <option value="A">Altro</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="data">Data di nascita</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
                     </div>
-                    
-                    <div class="input">
-                        <label for="cognome">Cognome</label>
-                        <input type="text" id="cognome" name="cognome" placeholder="Inserisci il cognome" required>
+
+                    <div class="credentials">
+                        <h1>Credenziali di accesso</h1>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Inserisci l'email" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="*********" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="conferma">Conferma Password</label>
+                            <input type="password" id="conferma" name="conferma" placeholder="*********" required>
+                        </div>
                     </div>
-    
-                    <div class="input">
-                        <label for="sesso">Sesso</label>
-                        <select id="sesso" name="sesso" required>
-                            <option value="M">Maschio</option>
-                            <option value="F">Femmina</option>
-                            <option value="A">Altro</option>
-                        </select>
-                    </div>
-    
-                    <div class="input">
-                        <label for="data">Data di nascita</label>
-                        <input type="date" id="data" name="data" required>
+
+                    <div class="payment">
+                        <h1>Metodo di pagamento</h1>
+                        <div class="input">
+                            <label for="carta">Numero Carta</label>
+                            <input type="number" id="carta" name="carta" placeholder="1234567890123456" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="scadenza">Scadenza</label>
+                            <input type="date" id="scadenza" name="scadenza" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="cvv">CVV</label>
+                            <input type="number" id="cvv" name="cvv" placeholder="***" maxlength="3" required>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="credentials">
-                    <h1>Credenziali di accesso</h1>
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Inserisci l'email" required>
-                    </div>
-        
-                    <div class="input">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="*********" required>
-                    </div>
-        
-                    <div class="input">
-                        <label for="conferma">Conferma Password</label>
-                        <input type="password" id="conferma" name="conferma" placeholder="*********" required>
-                    </div>
-                </div>
-    
-                <div class="payment">
-                    <h1>Metodo di pagamento</h1>
-                    <div class="input">
-                        <label for="carta">Numero Carta</label>
-                        <input type="number" id="carta" name="carta" placeholder="1234567890123456" required>
-                    </div>
-    
-                    <div class="input">
-                        <label for="scadenza">Scadenza</label>
-                        <input type="date" id="scadenza" name="scadenza" required>
-                    </div>
-    
-                    <div class="input">
-                        <label for="cvv">CVV</label>
-                        <input type="number" id="cvv" name="cvv" placeholder="***" maxlength="3" required>
-                    </div>
+                <div class="buttons">
+                    <button type="button"
+                        onclick="alert('I tuoi dati sono stati inviati con successo!')">Registrati</button>
+                    <button type="button" onclick="location.reload()">Reset</button>
                 </div>
             </div>
-            <div class="buttons">
-                <button type="button" onclick="alert('I tuoi dati sono stati inviati con successo!')">Registrati</button>
-                <button type="button" onclick="location.reload()">Reset</button>               
+        </section>
+        <div id="testimonianze">
+            <div class="right">
+                <div id="review-container" class="recensione">
+                    <script src="script/review.js"></script>
+                </div>
             </div>
         </div>
-    </section>
+    </header>
+
+
 
     <footer class="background">
         <img src="img/logo.svg" alt="logo" draggable="false">

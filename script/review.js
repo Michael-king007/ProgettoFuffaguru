@@ -19,7 +19,7 @@ function displayReview() {
     // Create the review HTML
     container.innerHTML = `
         <div class="top">
-            <img src="${review.profileImage}" alt="${review.name}'s profile image" class="profile-image">
+            <img src="${review.profileImage}" alt="${review.name}'s profile image" class="profile-image" draggable="false">
             <div class="container">
                 <h1>${review.name}, ${review.age} Anni</h1>
                 <p>${stars}</p>

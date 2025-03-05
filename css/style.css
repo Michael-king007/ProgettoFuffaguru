@@ -262,6 +262,19 @@ section li {
 }
 
 /*Registration*/
+#header-form {
+    display: flex;
+}
+
+#header-form #testimonianze .right {
+    width: 30vw;
+    height: max-content;
+}
+
+#register {
+    display: flex;
+}
+
 #register .section-content {
     display: flex;
     flex-direction: column;
@@ -402,6 +415,14 @@ footer .social img {
     }
 
     .personal-info, .credentials, .payment {
+        width: 100%;
+    }
+
+    #header-form {
+        flex-direction: column;
+    }
+
+    #header-form #testimonianze .right {
         width: 100%;
     }
 
