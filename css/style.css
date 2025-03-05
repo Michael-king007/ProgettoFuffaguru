@@ -220,8 +220,45 @@ section li {
 }
 
 #testimonianze .right{
+    display: flex;
     background-color: var(--page-color);
     border-radius: 15px;
+}
+
+.recensione {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#testimonianze .right .top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#testimonianze .container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 0px
+}
+
+#testimonianze .right h1, #testimonianze .right p {
+    margin: 0
+}
+
+#testimonianze .right img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+#testimonianze .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /*Registration*/
