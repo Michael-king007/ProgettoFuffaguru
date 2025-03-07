@@ -1,7 +1,7 @@
 let reviews = [];
 let currentIndex = 0;
 
-fetch("../db.json") 
+fetch("./db.json") 
     .then(response => response.json()) 
     .then(data => {
         reviews = data.reviews; 
